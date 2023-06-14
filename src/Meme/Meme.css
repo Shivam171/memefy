@@ -1,0 +1,199 @@
+body {
+  display: grid;
+  position: relative;
+  top: 68px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://media.tenor.com/Wg0BVgJV80MAAAAC/adventure-time-woah.gif");
+  background-repeat: no-repeat;
+  background-size: 1600px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 80vh;
+  border-radius: 10px;
+  width: 660px;
+  padding: 20px;
+  gap: 10px;
+  background: linear-gradient(-45deg, #8bff32, #90a2e5, #e600ff, #4961e6);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+  box-shadow: 2px 2px 22px 0.3px;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.left,
+.right {
+  gap: 15px;
+}
+
+.right {
+  margin-right: 40px;
+  gap: 25px;
+}
+
+img {
+  width: 300px;
+  border-radius: 8px;
+  height: auto;
+  box-shadow: 2px 2px 20px 0.3px;
+}
+
+button {
+  width: 100px;
+  padding: 10px 10px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background-color: #3d3d3d;
+  color: #fff;
+}
+
+button:hover {
+  transition: 0.2s linear all;
+  scale: 1.1;
+}
+
+h1 {
+  color: #fff;
+  font-weight: 250;
+  font-size: 3rem;
+  font-family: "Pacifico", cursive;
+  text-decoration: underline;
+}
+
+input {
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: #949494;
+  font-size: 13px;
+}
+
+/* Media Queries for Meme Page */
+
+@media screen and (max-width: 780px) {
+  .container {
+    transition: 0.2s all linear;
+    width: 500px;
+  }
+
+  img {
+    transition: 0.2s all linear;
+    width: 200px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    transition: 0.2s all linear;
+    font-size: 2.2rem;
+  }
+  button {
+    transition: 0.2s all linear;
+    font-size: 12px;
+  }
+  input {
+    transition: 0.2s all linear;
+    font-size: 0.8rem;
+  }
+  .left {
+    transform: scale(1.1);
+    transition: 0.2s linear all;
+  }
+  .right {
+    transform: scale(1.1);
+    transition: 0.2s linear all;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    transition: 0.2s all linear;
+    width: 400px;
+    height: 70vh;
+    margin-top: 40px;
+  }
+  .left {
+    transform: scale(1);
+    transition: 0.2s linear all;
+  }
+  .right {
+    transform: scale(0.8);
+    position: relative;
+    margin-left: -20px;
+    transition: 0.2s linear all;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .container {
+    transition: 0.2s all linear;
+    width: 350px;
+    height: 60vh;
+    margin-top: 80px;
+  }
+  .left {
+    transform: scale(0.9);
+    transition: 0.2s linear all;
+    margin-left: -5px;
+  }
+  .right {
+    transform: scale(0.7);
+    position: relative;
+    margin-left: -40px;
+    transition: 0.2s linear all;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    transition: 0.2s all linear;
+    width: 300px;
+    height: 50vh;
+    margin-top: 110px;
+  }
+  .left {
+    transform: scale(0.8);
+    transition: 0.2s linear all;
+    margin-left: -15px;
+  }
+  .right {
+    transform: scale(0.6);
+    position: relative;
+    margin-left: -55px;
+    transition: 0.2s linear all;
+  }
+}
