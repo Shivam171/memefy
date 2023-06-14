@@ -23,7 +23,7 @@ Meme Generator is a web application built with React that allows users to genera
 
 ## Demo
 
-You can try out Memefy by visiting the [live demo](https://your-meme-generator.netlify.app).
+You can try out Memefy by visiting the [live demo](https://memefy-shivam171.netlify.app/).
 
 ## Installation
 
