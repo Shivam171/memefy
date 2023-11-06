@@ -30,7 +30,7 @@ You can try out Memefy by visiting the [live demo](https://memefy-shivam171.netl
 I have used Vite to create this react project, Here's how you can use it after cloning my repo:
 1. Clone the repository:
    ```shell
-   git clone https://github.com/Shivam171/Memefy.git
+   git clone https://github.com/Shivam171/memefy.git
 2. Navigate to the project directory:
 	```shell
 	cd meme-generator
